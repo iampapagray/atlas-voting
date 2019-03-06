@@ -47,7 +47,7 @@
 				})
 				.then(function(docRef) {
 				    console.log("Document written with ID: ", docRef.id);
-				    M.toast({html: 'Voted Successfully!', classes: 'green', completeCallback:function(){
+				    M.toast({html: 'Voted Successfully - '+codeData.quantity+' vote(s)!', classes: 'green', completeCallback:function(){
 				    	localStorage.clear()
 				    	location.reload(true)
 				    } })
