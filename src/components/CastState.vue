@@ -147,7 +147,18 @@
 			this.chunkArray(this.thelist, 500)
 			// this.storeCodes()
 			// this.trypdf()
-			this.checkSizeOfCodes()
+			// this.checkSizeOfCodes()
+
+
+			db.collection('codes').where('code','==','0a27cWmY').get().then(querySnapshot => {
+				if(querySnapshot.empty){
+					console.log('not found')
+				}
+
+				querySnapshot.forEach(doc => {
+					console.log(doc.data())
+				})
+			})
 		}
 	};
 </script>

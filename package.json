@@ -10,12 +10,14 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@syncfusion/ej2-vue-grids": "^16.4.55",
+    "@syncfusion/ej2-vue-charts": "^16.4.54",
+    "chart.js": "^2.7.3",
     "express": "^4.16.4",
     "firebase": "^5.8.4",
     "jspdf": "^1.5.3",
     "jspdf-autotable": "^3.0.10",
     "vue": "^2.5.2",
+    "vue-chartjs": "^3.4.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

@@ -41,8 +41,9 @@ let router = new Router({
       name: 'Dashboard',
       component: Dashboard,
       meta: {
-        requiresAuth: true,
-        is_admin : true
+        // requiresAuth: true,
+        // is_admin : true
+        guest:true
       }
     },
     {
