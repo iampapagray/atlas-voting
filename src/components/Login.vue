@@ -11,7 +11,7 @@
 								<input id="last_name" type="text" class="validate" v-model="mycode" autocomplete="false" >
 								<!-- <label for="last_name">Last Name</label> -->
 							</div>
-							<button class="btn waves-effect waves-light" type="submit" name="action" @click="doSubmit">Submit <i class="far fa-paper-plane right"></i>
+							<button class="btn waves-effect waves-light" type="submit" name="action" @click="voteEnded">Submit <i class="far fa-paper-plane right"></i>
 							</button>
 						</form>
 		       		</div>
@@ -63,6 +63,10 @@
 					})
 				})
 				// router.push({ name: "cast-vote" })
+			},
+			voteEnded(e){
+				e.preventDefault()
+				M.toast({html: 'Sorry, voting has ended!', classes: 'red'})
 			}
 		}
 	};
